@@ -27,7 +27,7 @@ header, section, footer, aside, nav, main, article, figure {
 .header {
     position: relative;
     height: 100vh;
-    min-height: 600px;
+    min-height: 500px;
     background-image: url(../image/banner-top.jpg);
     background-size: cover;
     background-position: 60% 50%;
@@ -170,9 +170,11 @@ header, section, footer, aside, nav, main, article, figure {
 .hidden {
     overflow: hidden;
 }
+
+
 .nav {
     width: 100%;
-    height: 50px;
+    height: 51px;
     padding: 0 5%;
     position: relative;
     display: none;
@@ -183,7 +185,9 @@ header, section, footer, aside, nav, main, article, figure {
     position: relative;
     z-index: 3;
 }
-
+.nav .logo {
+    width: 150px;
+}
  .menu-mini {
      display: none;
      position: fixed;
@@ -217,9 +221,10 @@ header, section, footer, aside, nav, main, article, figure {
     display: block;
 }
 
-#drop {
+.drop {
     cursor: pointer;
     position: fixed;
+    right: 20px;
     background-color: #f8f8f8;
     width: 50px;
     height: 50px;
@@ -228,13 +233,13 @@ header, section, footer, aside, nav, main, article, figure {
     transition: 0.4s ease-in-out;
 }
 
-#drop[data-rule="active"] {
+.drop[data-rule="active"] {
     border-radius: 50%;
     animation: drop 0.3s forwards;
 }
 
 
-#drop > div {
+.drop > div {
     transform: rotate(-45deg);
     height: 100%;
     width: 100%;
@@ -244,7 +249,7 @@ header, section, footer, aside, nav, main, article, figure {
     align-items: center;
 }
 
-#drop span {
+.drop span {
     display: block;
     background-color: rgba(119, 0, 255, 1);
     width: 30px;
@@ -253,15 +258,15 @@ header, section, footer, aside, nav, main, article, figure {
     transition: 0.5s;
 }
 
-#drop span.open:nth-child(1) {
+.drop span.open:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-#drop span.open:nth-child(2) {
+.drop span.open:nth-child(2) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-#drop span.open:nth-child(3) {
+.drop span.open:nth-child(3) {
     opacity: 0;
 }
 
@@ -431,6 +436,7 @@ header, section, footer, aside, nav, main, article, figure {
     }
     .nav {
         display: flex;
+        justify-content: flex-start;
     }
     .info {
         height: auto;
