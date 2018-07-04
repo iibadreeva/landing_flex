@@ -27,7 +27,7 @@ header, section, footer, aside, nav, main, article, figure {
 .header {
     position: relative;
     height: 100vh;
-    min-height: 500px;
+    min-height: 400px;
     background-image: url(../image/banner-top.jpg);
     background-size: cover;
     background-position: 60% 50%;
@@ -259,11 +259,11 @@ header, section, footer, aside, nav, main, article, figure {
 }
 
 .drop span.open:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(4px, 4px);
 }
 
 .drop span.open:nth-child(2) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(4px, -4px);
 }
 
 .drop span.open:nth-child(3) {
