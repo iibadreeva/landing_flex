@@ -7,10 +7,10 @@ window.addEventListener('scroll',function() {
           scroll = html.scrollTop;
 
 
-    if (scroll > 100){
+    if (scroll > 50){
         drop.dataset.rule = 'active';
 
-    }else if (scroll < 80){
+    }else if (scroll < 40){
         drop.dataset.rule = '';
     }
 
